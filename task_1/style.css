@@ -1,0 +1,361 @@
+/* Start Global */
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;217;230;300;400;500;600;700;800;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: cairo, arial;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.clear {
+    clear: both;
+}
+
+body {
+    height: 10000px;
+    background-color: #012025;
+    position: relative;
+    z-index: -999;
+}
+
+.button {
+    display: inline-block;
+    border-radius:  50px;
+    padding: 1px 1px;
+    background: linear-gradient(98deg, rgba(0,236,255,1) 0%, rgba(91,227,119,1) 42%, rgba(251,210,70,1) 100%);
+}
+
+.button button {
+    background-color: #012025;
+    position: relative;
+    border: none;
+    padding: 5px 30px;
+    border-radius: 50px;
+    transition: .2s;
+    cursor: pointer;
+}
+
+.button button:hover {
+    color: black;
+    background: linear-gradient(98deg, rgba(0,236,255,1) 0%, rgba(91,227,119,1) 42%, rgba(251,210,70,1) 100%);
+}
+
+.button .active {
+    background: linear-gradient(98deg, rgba(0,236,255,1) 0%, rgba(91,227,119,1) 42%, rgba(251,210,70,1) 100%);
+    color: black;
+    position: relative;
+    border: none;
+    padding: 5px 30px;
+    border-radius: 50px;
+    transition: .2s;
+    cursor: pointer;
+}
+
+.button .active:hover {
+    color: #fff;
+    background: #012025;
+}
+
+img.image {
+    border: 1px solid  #c9f351;
+}
+
+.external-box {
+    display: inline-block;
+    background-color: white;
+    padding: 10px 15px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 0px #5b767b;
+    z-index: 12;
+}
+
+.external-box header {
+    color: black;
+    font-size: 30px;
+}
+
+.external-box p {
+    color: black;
+}
+
+.external-box button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 30px;
+    background-color: #84e4ef;
+    color: #097b86;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.external-box button:hover {
+    background-color: #70dde9;
+    color: #066770;
+}
+
+::selection {
+    background: #00def2;
+    color: #012d34;
+}
+/* End Global */
+
+/* Start Up Button */
+.up {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+
+.up button {
+    padding: 19px;
+}
+
+.up button::before {
+    content: "";
+    position: absolute;
+    right: 8.7px;
+    bottom: 15px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent #097b86 transparent;
+}
+/* End Up Button */
+
+/* Start Header */
+header.nav {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    background-color: #012025;
+    transform: translate(-50%, 0%);
+    padding: 20px 0;
+    margin: auto;
+    display: inline-flex;
+    width: 101%;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 50px;
+    z-index: 999;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: 1000;
+}
+
+header span {
+    color: #66e39e;
+}
+
+header.nav ul li, header.nav nav li{
+    display: inline-block;
+    letter-spacing: 1px;
+}
+
+.center-header li {
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: .1s;
+}
+
+.center-header li:hover{
+    background-color: #012d34;
+}
+
+.center-header li:hover a{
+    color: aqua;
+}
+/* End Header */
+
+
+/* Strart Main*/
+.main {
+    margin-top: 100px;
+    margin-left: 5%;
+}
+
+.main .text-about {
+    display: inline-block;
+    width: 50%;
+}
+
+.main .text-about h2 {
+    font-size: 60px;
+}
+
+.main .text-about span {
+    display: inline-block;
+    margin: 20px 0;
+}
+
+.main .image-about {
+    position: relative;
+    right: -3px;
+    display: inline-block;
+    width: 49.5%;
+    border-radius: 30px 0 0 30px;
+    background-color: #22454c;
+    overflow: hidden;
+}
+
+.main .image-about img {
+    width: 100%;
+    border-right: none;
+    border-bottom: none;
+}
+
+.main .image-about .text-cart {
+    margin-top: -10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.main .buy {
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.main .external-box {
+    position: absolute;
+    right: 470px;
+    top: 440px;
+}
+/* End Main */
+
+/* Start Answer */
+.answers .circle-one, .answers .circle-two {
+    width: 150px;
+    height: 150px;
+    background-color: #84e4ef;
+    position: absolute;
+    border-radius: 50%;
+    border-top: 4px solid #66b34b;
+    transform: rotate(45deg);
+    z-index: -1;
+}
+
+.circle-one {
+    left: -20px;
+    top: -80px;
+}
+
+.circle-two {
+    top: 190px;
+    left: 200px;
+    border-right: 4px solid #66b34b;
+}
+
+.answers {
+    margin: 100px 0;
+    background:#104149;
+    position: relative;
+    z-index: -12;
+}
+
+.answers .answer-image {
+    width: 49%;
+    display: inline-block;
+    position: relative;
+}
+
+.answers .answer-image img {
+    width: 65%;
+    border-radius: 0 10px 10px 0;
+    border-left: none;
+}
+
+.answers .external-box {
+    position: absolute;
+    bottom: -20px;
+    right: 100px;
+}
+
+.answers .answer-text {
+    width: 50%;
+    padding: 80px 0;
+    display: inline-block;
+}
+
+.answers .answer-text header {
+    font-size: 45px;
+}
+
+.answers .answer-text p {
+    font-size: 18px;
+}
+/* End Answer */
+
+/* Start Courses */
+.courses {
+    text-align: center;
+}
+
+.courses header {
+    font-size: 45px;
+    
+}
+
+.courses p {
+    margin: 15px 0 40px 0;
+}
+
+.courses .button {
+    margin: 0 10px;
+}
+
+.courses-section .cards {
+    margin: 60px 0 100px 25%;
+}
+
+.courses-section .cards .card {
+    position: relative;
+    display: inline-block;
+    margin-right: 30px;
+    border: 1px solid #79c191;
+    border-radius: 30px;
+    background: #244348;
+    overflow: hidden;
+    width: 350px;
+    height: 370px;
+}
+
+.courses-section .cards .card img {
+    border-radius: 30px 30px 0 0;
+    width: 100%;
+}
+
+.courses-section .cards .card .text {
+    position: absolute;
+    top: 230px;
+    width: 350px;
+    padding: 20px 20px;
+    background: #244348;
+    z-index: 22;
+}
+
+.courses-section .cards .card .text span {
+    margin-left: 20px;
+    color: #58c2d5;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.courses-section .cards .card .text .title {
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+.courses-section .cards .card .text:last-child {
+    font-size: 13px;
+    padding-bottom: 35px;
+}
+/* End Courses */
